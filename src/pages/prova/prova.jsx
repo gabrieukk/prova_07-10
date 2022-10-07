@@ -66,76 +66,74 @@ export default function Prova(){
     return(
         
         <main className="page">
-            <section>
-                <div className='acai'>
+            <section className="acai">
+                <div>
                     <h1>Açaí</h1>
-                    <div>
-                        <label>Digite a quantidade de açaís pequenos:</label>
-                        <input type="number"
-                        value={qtdPeq} onChange={e => setQtdPeq(e.target.value)}/>
-                    </div>
+                        <div>
+                            <label>Digite a quantidade de açaís pequenos:</label>
+                            <input type="number"
+                            value={qtdPeq} onChange={e => setQtdPeq(e.target.value)}/>
+                        </div>
 
-                    <div>
-                        <label>Digite a quantidade de açaís médios:</label>
-                        <input type="number"
-                        value={qtdMed} onChange={e => setQtdMed(e.target.value)}/>
-                    </div>
+                        <div>
+                            <label>Digite a quantidade de açaís médios:</label>
+                            <input type="number"
+                            value={qtdMed} onChange={e => setQtdMed(e.target.value)}/>
+                        </div>
 
-                    <div>
-                        <label>Digite a quantidade de açaís grandes:</label>
-                        <input type="number"
-                        value={qtdGra} onChange={e => setQtdGra(e.target.value)}/>
-                    </div>
+                        <div>
+                            <label>Digite a quantidade de açaís grandes:</label>
+                            <input type="number"
+                            value={qtdGra} onChange={e => setQtdGra(e.target.value)}/>
+                        </div>
 
-                    <div>
-                        <label>Digite qual o valor de desconto:</label>
-                        <input type="number"
-                        value={Desc} onChange={e => setVlDesc(e.target.value)}/>
-                    </div>
+                        <div>
+                            <label>Digite qual o valor de desconto:</label>
+                            <input type="number"
+                            value={Desc} onChange={e => setVlDesc(e.target.value)}/>
+                        </div>
+                        </div>
+                        
+                        <div>
+                            <button onClick={acai}>Finalizar</button> 
+                        </div>
 
-                </div>
-
-                <div>
-                    <button onClick={acai}>Finalizar</button> 
-                </div>
-
-                <div>
-                    {Final}
-                </div>
+                        <div>
+                            {Final}
+                        </div>
             </section>
 
-            <section>
+            <section className="box-signo">
                 <h1>Signo</h1>
-                <div>
-                    <label>Digite o mês do seu nascimento:</label>
-                    <input type="text" value={mes} onChange={e => setMes(e.target.value)}/>
-                </div>
-                <div>
-                    <label>Digite o dia do seu nascimento:</label>
-                    <input type="number" value={dia} onChange={e => setDia(e.target.value)}/>
-                </div>
-                <div>
-                    <button onClick={Signo}>Checar se o signo é de Libras </button> 
-                </div>
-                <div> 
-                    {resul === true ? 'Signo é Libras? Sim' : 'Signo é Libras? Não'}
-                </div>
+                    <div>
+                        <div>Digite o mês do seu nascimento:</div>
+                        <input type="text" value={mes} onChange={e => setMes(e.target.value)}/>
+                    </div>
+                    <div>
+                        <div>Digite o dia do seu nascimento:</div>
+                        <input type="number" value={dia} onChange={e => setDia(e.target.value)}/>
+                    </div>
+                    <div>
+                        <button onClick={Signo}>Checar se o signo é de Libras </button> 
+                    </div>
+                    <div> 
+                        {resul === true ? 'Signo é Libras? Sim' : 'Signo é Libras? Não'}
+                    </div>
             </section>
             
-            <section>
+            <section className="box-sorvete">
                 <h1>Sorvete</h1>
-                <div> 
-                    <label> Digite o valor em gramas:</label>
-                    <input type="number" value={gramas} onChange={e => setGramas(e.target.value)}/>
-                <div/>
-                <div>
-                    <button onClick={sorveteria}> Concluir Compra</button>
-                </div>
-                  <div>
-                      {Total}
-                  </div>
-              </div>
-          
+                    <div> 
+                        <div> Digite o valor em gramas:</div>
+                        <input type="number" value={gramas} onChange={e => setGramas(e.target.value)}/>
+                    <div/>
+                    <div>
+                        <button onClick={sorveteria}> Concluir Compra</button>
+                    </div>
+                    <div>
+                        {Total}
+                    </div>
+                    </div>
             </section>
         </main>
             

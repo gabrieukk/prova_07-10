@@ -1,6 +1,22 @@
 .page{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-color: rgb(176, 250, 250);
+    height: 100vh;
+
+
+    .acai{
+        border-style: solid;
+
+    }
+
+    .box-signo{
+        border-style: solid;
+    }
+
+    .box-sorvete{
+        border-style: solid;
+    }
 }

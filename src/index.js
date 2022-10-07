@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-import Prova from './pages/prova/prova';
+import Routess from './routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Prova />
+    <Routess />
   </React.StrictMode>
 );
 
