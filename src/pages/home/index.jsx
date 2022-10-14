@@ -4,7 +4,6 @@ import './index.scss'
 
 export default function Home(){
     return(
-        <>
             <div className="page">        
                 <h1>PROVA - O7/10 😀 </h1>
                 <div className="links">
@@ -18,6 +17,5 @@ export default function Home(){
                     <p className="link"><Link to='/orcamento'>Situação do orçamento</Link></p>
                 </div>
             </div>    
-        </>
     )
 } 

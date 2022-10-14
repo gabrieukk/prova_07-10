@@ -1,10 +1,20 @@
 .page{
     display: flex;
     flex-direction: column;
-    .links{
-        
+    align-items: center;
+    background-color: rgb(175, 209, 209);
+    
+    h1{
+        margin-top: 2.5em;
+        margin-bottom: 1em;
     }
     .link{
         margin-top: 1em;
+        border-style: solid;
+        border-radius: 1em;
+        border-color: yellow;
+        padding:10px;
+        background-color: yellow;
+
     }
 }
