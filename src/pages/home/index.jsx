@@ -15,6 +15,8 @@ export default function Home(){
                     <p className="link"><Link to='/febre'>Confira se você está morrendo</Link></p>
                     <p className="link"><Link to='/ingresso'>Valor do ingresso</Link></p>
                     <p className="link"><Link to='/orcamento'>Situação do orçamento</Link></p>
+                    <p className="link"><Link to='/contar'> Contar</Link></p>
+                    <p className="link"><Link to='/retangulo'> Crie seu retangulo</Link></p>
                 </div>
             </div>    
     )
