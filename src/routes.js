@@ -12,6 +12,8 @@ import OrcamentoFam from './pages/orcamentoFam';
 import ContarPage from './pages/contar';
 import Linha from "./pages/linhas";
 import RetanguloPage from './pages/retangulo';
+import Cafe from './pages/cafe';
+import Juros from './pages/jurosSimples'
 
 export default function Routess(){
     return(
@@ -29,6 +31,8 @@ export default function Routess(){
                 <Route path='/contar' element={<ContarPage/>}/>
                 <Route path='/linha' element={<Linha/>}/>
                 <Route path='/retangulo' element={<RetanguloPage/>}/>
+                <Route path='/cafe' element={<Cafe/>}/>
+                <Route path='/juros' element={<Juros/>}/>
             </Routes>
         </BrowserRouter>
     )
